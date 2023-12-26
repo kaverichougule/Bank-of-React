@@ -79,7 +79,7 @@ console.log("Monthly Payment:", monthlyPayment);
 
   return (
     <div>
-      <h2>Monthly Payment: $ 45.29</h2>
+      <h2>Monthly Payment: $ {(("" + monthlyPayment).substring(0, ("" + monthlyPayment).indexOf(".") + 3))}</h2>
       <canvas ref={chartRef} className='piechart'></canvas>
     </div>
   );
